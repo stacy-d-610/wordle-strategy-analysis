@@ -27,5 +27,5 @@ Using just the frequencies in each position, it seems that CARES is the best wor
 
 It's hard to say the exact impact of position versus eliminating the letter without going deep into the math. However, we could see that of the top five letters for position one, 't' also appears pretty high up on the overall frequency list. Since it is almost twice as frequent overall than 'c' is, TARES might be a better starting word than CARES. 
 
-You can check out the code and run it yourself using the text files above to come to your own conclusions. Thanks for reading!
+I will be cleaning up my code and refining soon so that hopefully you can run your own words to see how it compares. Thanks for reading!
 
