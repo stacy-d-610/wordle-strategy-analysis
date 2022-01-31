@@ -1,14 +1,14 @@
 # wordle-strategy-analysis
 
-[Wordle](https://www.powerlanguage.co.uk/wordle/) is a game that's taken the internet by storm. It is a simple game where the goal is to guess the 5 letter word of the day within six guesses using the clues given on each guess. 
+[Wordle](https://www.powerlanguage.co.uk/wordle/) is a game that's taken the internet by storm. It is a simple game where the goal is to guess the 5 letter word of the day within six guesses using the clues given after each guess. 
 
-On each guess, the player is told whether a letter of a given position is in the word or in the position. Thus, for our analysis, we mainly consider the frequency of the letter in all the possible words and the frequency of the letter in each position.
+On each guess, the player is told whether the letter in that position is in the word or in that position. Thus, for our analysis, we mainly consider the frequency of the letter in all the possible words and the frequency of the letter in each position.
 
 For this analysis, I am using the word bank from Wordle itself. This can be found through the source code, or cleaned found at https://gist.github.com/cfreshman/a03ef2cba789d8cf00c08f767e0fad7b and https://gist.github.com/cfreshman/cdcdf777450c5b5301e439061d29694c. 
 
 I used this project as a chance to practice SQL. I added SQLite to the Python code to store the words from the text files above and to process some functions faster. 
 
-I first found the top five most frequent words to see if we can form a word using these letters. Here are the letters and the frequency they appeared in the word bank, repeats within the same word were not counted.
+I first found the top five most frequent letters to see if we can form a word using these letters. Here are the letters and the frequency they appeared in the word bank. Repeats within the same word were not counted.
 [('s', 5936), ('e', 5705), ('a', 5330), ('o', 3911), ('r', 3909)]
 
 AROSE can be formed from these letters and used in the game. However, success in the game means that the player also has to get the letters in the correct positions. Since the game tells you whether or not your letter is in the correct position, it makes sense to narrow down the number of possible positions as much as possible. 
